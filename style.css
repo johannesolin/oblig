@@ -24,7 +24,6 @@
     }
 
     header {
-    border: 1px dashed white;
     width: 100%;
     position: absolute;
     display: flex;
@@ -75,7 +74,6 @@
     .Men {
     display: flex;
     border:1px solid black;
-    text-align:center;
     font-size: 2.5rem;
     font-weight: bold;
     }
@@ -83,7 +81,6 @@
     .Women {
     display: flex;
     border:1px solid black;
-    text-align:center;
     font-size: 2.5rem;
     font-weight: bold;
     }
@@ -91,7 +88,6 @@
     .Junior {
     display: flex;
     border:1px solid black;
-    text-align:center;
     font-size: 2.5rem;
     font-weight: bold;
     }
@@ -99,7 +95,6 @@
     .Sale {
     display: flex;
     border:1px solid black;
-    text-align:center;
     font-size: 2.5rem;
     font-weight: bold;
     }
@@ -107,7 +102,6 @@
     .Outlet {
     display: flex;
     border:1px solid black;
-    text-align:center;
     font-size: 2.5rem;
     font-weight: bold;
     }
@@ -159,7 +153,7 @@
     background-size: cover;
     height: 150px;
     width: 100%;
-
+    margin-top: 1.5rem;
     }
    
     main {
@@ -176,8 +170,9 @@
     }
 
     .filter {
-    text-align: right;
+    text-align: center;
     border: solid black;
+    border-radius: 25%;
     background-color: gray;
     padding: 1%;
     justify-content: space-between;
@@ -186,8 +181,9 @@
     }
 
     .sort {
-    text-align: right;
+    text-align: center;
     border: solid black;
+    border-radius: 25%;
     background-color: grey;
     padding: 1%;
     margin-left: 91%;
@@ -196,7 +192,7 @@
     margin-top: 1%;
     }
 
-    .sko {
+    .men1 {
     width: 100px;
     height: 100px;
     justify-content: space-between;
@@ -208,7 +204,7 @@
     margin-top: 7%;
     }
 
-    .dame{
+    .women1 {
     width: 100px;
     height: 100px;
     justify-content: space-between;
@@ -219,15 +215,22 @@
     margin-left: 63px;
     margin-top: 7%;
     }
+
+    .delivery-ul {
+    display: flex;
+    border: 5px black solid;
+    margin-left: 32%;
+    margin-right: 25%;
+    }
     
     .delivery-ul li {
-    border: 5px black solid;
-    width: 100%;
+    border: 3px black solid;
+    width: 3rem;
     margin-bottom: 1rem;
     display: flex;
     padding: 1px;
-    justify-content: space-between;
     align-items: center;
+    margin-top: 1.5rem;
     }
 
     .footer {
