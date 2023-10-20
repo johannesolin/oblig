@@ -1,0 +1,239 @@
+    *{
+    text-decoration: none;
+    }
+    
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    }
+
+    main {
+    overflow-x: hidden;
+    }
+   
+    *{ 
+    margin: 0;
+    padding: 0;
+    }
+
+    nav {
+    width: 100%;
+    }
+
+    header {
+    border: 1px dashed white;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2.5%;
+    }
+  
+    .nav_image {
+    width: 100%; 
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+  
+    ul {
+    display: flex;
+    border: 1px dashed white;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 1rem;
+    }
+  
+    ul li {
+    border: 1px dashed white;
+    list-style-type: none;
+    }
+  
+    .end-right {
+    margin-left: auto;
+    }
+  
+    #grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer" 
+    }
+
+    .searchbar {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+   
+    }
+
+    .Men {
+    display: flex;
+    border:1px solid black;
+    text-align:center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    }
+
+    .Women {
+    display: flex;
+    border:1px solid black;
+    text-align:center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    }
+
+    .Junior {
+    display: flex;
+    border:1px solid black;
+    text-align:center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    }
+
+    .Sale {
+    display: flex;
+    border:1px solid black;
+    text-align:center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    }
+
+    .Outlet {
+    display: flex;
+    border:1px solid black;
+    text-align:center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    }
+
+    .costumer {
+    display: flex;
+    width: 50%;
+    height: 150px;
+    margin-top: 5%;
+    margin-left: 25%;
+    }
+   
+    .men_women {
+    display: flex;
+    border:1px solid black;
+    text-align:center;
+    background-color:grey;
+    margin:1.2rem 0 1.2rem 0;
+    text-decoration: none;
+    }
+
+    .men_women p {
+    background-color: white;
+    }
+
+    .men_women a{
+    width:50%;
+    }
+
+    .men_women a{
+    width:50%;
+    }
+
+    .first {
+    background-size: cover;
+    width: 100%;
+    align-self: flex-start;
+    max-width: 100%;
+    min-height: 280px;
+    }
+
+    .second {
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    }
+
+    .third {
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    }
+   
+    main {
+    margin-left: 12%;
+    margin-right: 12%;
+    padding-top: 10%;
+    grid-template-areas: calc(399);
+    }
+
+    .main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2%;
+    }
+
+    .filter {
+    text-align: right;
+    border: solid black;
+    background-color: gray;
+    padding: 1%;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 91%;
+    }
+
+    .sort {
+    text-align: right;
+    border: solid black;
+    background-color: grey;
+    padding: 1%;
+    margin-left: 91%;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 1%;
+    }
+
+    .sko {
+    width: 100px;
+    height: 100px;
+    justify-content: space-between;
+    padding: 3%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin-left: 63px;
+    margin-top: 7%;
+    }
+
+    .dame{
+    width: 100px;
+    height: 100px;
+    justify-content: space-between;
+    padding: 3%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin-left: 63px;
+    margin-top: 7%;
+    }
+    
+    .delivery-ul li {
+    border: 5px black solid;
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    padding: 1px;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .footer {
+    background:grey;
+    position: relative;
+    bottom: 0; 
+    width:100%;
+    padding:4%; 
+    bottom: 0;
+    margin-top: 100px;
+    }
+
+    .footer p {
+    text-align:left;
+    }
