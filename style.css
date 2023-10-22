@@ -41,10 +41,12 @@
     align-items: center;
     z-index: 0;
     }
+    .nav_image a {
+    display: block;
+    } 
   
     ul {
     display: flex;
-    border: 1px dashed white;
     width: 100%;
     justify-content: flex-start;
     gap: 1rem;
@@ -216,20 +218,60 @@
     margin-top: 7%;
     }
 
+    .Costumer-Club {
+    display: block;
+    border: 1px black solid;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    }
+
+    .reg {
+    margin-top: 10%;
+    }
+
+    .log {
+    margin-top: 1.5rem;
+    }
+
+    .text2 {
+    text-align: center;
+    margin-top: 6%;
+    line-height: 2.2rem;
+    }
+
     .delivery-ul {
     display: flex;
     border: 5px black solid;
-    margin-left: 32%;
-    margin-right: 25%;
+    margin-left: 29%;
+    margin-right: 27%;
     }
     
     .delivery-ul li {
     border: 3px black solid;
-    width: 3rem;
+    width: 1rem;
     margin-bottom: 1rem;
     display: flex;
-    padding: 1px;
+    padding: 0.1%;
     align-items: center;
+    margin-top: 1.5rem;
+    }
+
+    .text1 {
+    border: 1px black solid;
+    background-color: grey;
+    text-align: center;
+    margin-left: 29%;
+    margin-right: 29%;
+    margin-top: 5%;
+    }
+
+    .click {
+    margin-left: 32%;
+    margin-right: 32%;
     margin-top: 1.5rem;
     }
 
@@ -245,4 +287,14 @@
 
     .footer p {
     text-align:left;
+    }
+
+    .footer1 {
+    background:grey;
+    position: absolute;        
+    bottom: 0; 
+    width: 100%;
+    padding:2%; 
+    bottom: 0;
+    margin-top: 100px;
     }
