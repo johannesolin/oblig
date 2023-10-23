@@ -1,29 +1,36 @@
-    *{
+/* Tilbakestiller tekstdekorasjon for alle elementer */
+* {
     text-decoration: none;
-    }
-    
-    body {
+}
+
+/* Stilsetting for hele body */
+body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
     margin: 0;
-    }
+    background-color: #D3D3D3; /* Bakgrunnsfarge for hele siden */
+}
 
-    main {
+/* Stilsetting for hovedinnholdet */
+main {
     overflow-x: hidden;
-    }
-   
-    *{ 
+}
+
+/* Tilbakestiller margin og padding for alle elementer */
+* {
     margin: 0;
     padding: 0;
-    }
+}
 
-    nav {
+/* Stilsetting for navigasjonen */
+nav {
     width: 100%;
     position: relative;
     z-index: 1;
-    }
+}
 
-    header {
+/* Stilsetting for header */
+header {
     width: 100%;
     position: absolute;
     display: flex;
@@ -31,147 +38,160 @@
     align-items: center;
     margin-top: 2.5%;
     z-index: 0;
-    }
-  
-    .nav_image {
-    width: 100%; 
+}
+
+/* Stilsetting for navigasjonsbildet */
+.nav_image {
+    width: 100%;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 0;
-    }
-    .nav_image a {
+}
+
+.nav_image a {
     display: block;
-    } 
-  
-    ul {
+}
+
+/* Stilsetting for lenker i navigasjonen */
+ul {
     display: flex;
     width: 100%;
     justify-content: flex-start;
     gap: 1rem;
-    }
-  
-    ul li {
+}
+
+ul li {
     list-style-type: none;
     margin-left: 5%;
     margin-right: 5%;
-    }
-  
-    .end-right {
-    margin-left: auto;
-    }
-  
-    #grid-container {
-    display: grid;
-    grid-template-areas: "header" "main" "footer" 
-    }
+}
 
-    .searchbar {
+/* Høyrejusterer det siste elementet i navigasjonen */
+.end-right {
+    margin-left: auto;
+}
+
+/* Stilsetting for grid-container */
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+/* Stilsetting for søkefelt */
+.searchbar {
     margin-top: 1rem;
     margin-bottom: 1rem;
-   
-    }
+}
 
-    .Men {
+/* Stilsetting for kategori MEN */
+.Men {
     display: flex;
-    border:1px solid black;
+    border: 1px solid black;
     font-size: 2.5rem;
     font-weight: bold;
-    }
+}
 
-    .Women {
+/* Stilsetting for kategori WOMEN */
+.Women {
     display: flex;
-    border:1px solid black;
+    border: 1px solid black;
     font-size: 2.5rem;
     font-weight: bold;
-    }
+}
 
-    .Junior {
+/* Stilsetting for kategori Junior */
+.Junior {
     display: flex;
-    border:1px solid black;
+    border: 1px solid black;
     font-size: 2.5rem;
     font-weight: bold;
-    }
+}
 
-    .Sale {
+/* Stilsetting for kategori Sale */
+.Sale {
     display: flex;
-    border:1px solid black;
+    border: 1px solid black;
     font-size: 2.5rem;
     font-weight: bold;
-    }
+}
 
-    .Outlet {
+/* Stilsetting for kategori Outlet */
+.Outlet {
     display: flex;
-    border:1px solid black;
+    border: 1px solid black;
     font-size: 2.5rem;
     font-weight: bold;
-    }
+}
 
-    .costumer {
+/* Stilsetting for brukerseksjon */
+.costumer {
     display: flex;
     width: 50%;
     height: 150px;
     margin-top: 5%;
     margin-left: 25%;
-    }
-   
-    .men_women {
+}
+
+/* Stilsetting for menn- og kvinnerkategorier */
+.men_women {
     display: flex;
-    border:1px solid black;
-    text-align:center;
-    background-color:grey;
-    margin:1.2rem 0 1.2rem 0;
+    border: 1px solid black;
+    text-align: center;
+    background-color: grey;
+    margin: 1.2rem 0; /* Legger til margin for å gi pusterom */
     text-decoration: none;
-    }
+}
 
-    .men_women p {
+.men_women p {
     background-color: white;
-    }
+}
 
-    .men_women a{
-    width:50%;
-    }
+.men_women a {
+    width: 50%;
+}
 
-    .men_women a{
-    width:50%;
-    }
-
-    .first {
+/* Stilsetting for bilder i forskjellige seksjoner */
+.first {
     background-size: cover;
     width: 100%;
     align-self: flex-start;
     max-width: 100%;
     min-height: 280px;
-    }
-
-    .second {
+}
+.second {
     background-size: cover;
-    height: 150px;
     width: 100%;
-    }
+    align-self: flex-start;
+    max-width: 100%;
+    min-height: 280px;
+}
 
-    .third {
+.third {
     background-size: cover;
-    height: 150px;
     width: 100%;
-    margin-top: 1.5rem;
-    }
-   
-    main {
+    align-self: flex-start;
+    max-width: 100%;
+    min-height: 280px;
+}
+
+/* Ekstra stilsetting for hovedinnholdet */
+main {
     margin-left: 12%;
     margin-right: 12%;
     padding-top: 10%;
     grid-template-areas: calc(399);
-    }
+}
 
-    .main {
+.main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2%;
-    }
+}
 
-    .filter {
+/* Stilsetting for filter-seksjon */
+.filter {
     text-align: center;
     border: solid black;
     border-radius: 25%;
@@ -180,9 +200,10 @@
     justify-content: space-between;
     flex-direction: column;
     margin-left: 91%;
-    }
+}
 
-    .sort {
+/* Stilsetting for sorteringsseksjon */
+.sort {
     text-align: center;
     border: solid black;
     border-radius: 25%;
@@ -192,9 +213,10 @@
     justify-content: space-between;
     flex-direction: column;
     margin-top: 1%;
-    }
+}
 
-    .men1 {
+/* Stilsetting for produktbilder menn */
+.men1 {
     width: 100px;
     height: 100px;
     justify-content: space-between;
@@ -204,9 +226,10 @@
     border: 1px solid black;
     margin-left: 63px;
     margin-top: 7%;
-    }
+}
 
-    .women1 {
+/* Stilsetting for produktbilder kvinner */
+.women1 {
     width: 100px;
     height: 100px;
     justify-content: space-between;
@@ -216,9 +239,10 @@
     border: 1px solid black;
     margin-left: 63px;
     margin-top: 7%;
-    }
+}
 
-    .Costumer-Club {
+/* Stilsetting for Costumer-Club */
+.Costumer-Club {
     display: block;
     border: 1px black solid;
     font-weight: bold;
@@ -227,30 +251,34 @@
     margin-top: 1rem;
     margin-left: 10%;
     margin-right: 10%;
-    }
+}
 
-    .reg {
+/* Stilsetting for registreringsseksjon */
+.reg {
     margin-top: 10%;
-    }
+}
 
-    .log {
+/* Stilsetting for logginnseksjon */
+.log {
     margin-top: 1.5rem;
-    }
+}
 
-    .text2 {
+/* Stilsetting for tekstseksjon 2 */
+.text2 {
     text-align: center;
     margin-top: 6%;
     line-height: 2.2rem;
-    }
+}
 
-    .delivery-ul {
+/* Stilsetting for leveringsul */
+.delivery-ul {
     display: flex;
     border: 5px black solid;
     margin-left: 29%;
     margin-right: 27%;
-    }
-    
-    .delivery-ul li {
+}
+
+.delivery-ul li {
     border: 3px black solid;
     width: 1rem;
     margin-bottom: 1rem;
@@ -258,24 +286,27 @@
     padding: 0.1%;
     align-items: center;
     margin-top: 1.5rem;
-    }
+}
 
-    .text1 {
+/* Stilsetting for tekstseksjon 1 */
+.text1 {
     border: 1px black solid;
     background-color: grey;
     text-align: center;
     margin-left: 29%;
     margin-right: 29%;
     margin-top: 5%;
-    }
+}
 
-    .click {
+/* Stilsetting for klikkseksjon */
+.click {
     margin-left: 32%;
     margin-right: 32%;
     margin-top: 1.5rem;
     }
-
-    .footer {
+    
+    /* Stilsetting for footer */
+.footer {
     background:grey;
     position: relative;
     bottom: 0; 
@@ -285,11 +316,11 @@
     margin-top: 100px;
     }
 
-    .footer p {
+.footer p {
     text-align:left;
     }
 
-    .footer1 {
+.footer1 {
     background:grey;
     position: absolute;        
     bottom: 0; 

@@ -1,42 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Metainformasjon -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Eksterne stilark -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="assets/font/css/fontawesome.css" rel="stylesheet">
     <link href="assets/font/css/brands.css" rel="stylesheet">
     <link href="assets/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- Tittelen på nettsiden -->
     <title>SkyBlueShoes</title>
 </head>
 
 <body>
+    <!-- Grid Container -->
     <div id="grid-container"></div>
-        <header>
-            <div class="nav_image">
-                <a href="index.html">
-                    <img alt="bildet" src="img/logo.png" width="150" height="40" />
-                </a>
-            </div>
-            <nav id="navigation">
-                <ul id="navigation-ul">
-                    <li><a href="menu.html" style="color: black;"><i class="a-sharp fa-solid fa-bars"></i></a></li>
-                    <li><a href="search.html" style="color: black;"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></li>
-                    <li class="end-right"><a href="costumer-club.html" style="color: black;"><i class="fa-solid fa-user"></i></a></li>
-                    <li><a href="shopping-cart.html" style="color: black;"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-              </nav>
-         </header>
-         <main>
-            <p class="text1">HANDLEKURVEN ER TOM</p>
-            <button onclick="window.location.href='menu.html'" class="click">KLIKK HER FOR Å HANDLE</button>
-         </main>
 
-         <footer class="footer1">
-            <p>About Us</p>
-            <p>Contact Email: post@skyblue.com</p>
-    
-        </footer>    
-    </body>
-    </html>
+    <!-- Header-seksjon -->
+    <header>
+        <!-- Navigasjonsbilde med lenke til hovedsiden -->
+        <div class="nav_image">
+            <a href="index.html">
+                <img alt="SkyBlueShoes-logo" src="img/logo.png" width="150" height="40" />
+            </a>
+        </div>
+
+        <!-- Navigasjonsmeny -->
+        <nav id="navigation">
+            <ul id="navigation-ul">
+                <!-- Lenke til meny-siden -->
+                <li><a href="menu.html" style="color: black;"><i class="a-sharp fa-solid fa-bars"></i></a></li>
+
+                <!-- Lenke til søkesiden -->
+                <li><a href="search.html" style="color: black;"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></li>
+
+                <!-- Lenke til kundeklubbsiden (høyrejustert) -->
+                <li class="end-right"><a href="costumer-club.html" style="color: black;"><i class="fa-solid fa-user"></i></a></li>
+
+                <!-- Lenke til handlekurvsiden -->
+                <li><a href="shopping-cart.html" style="color: black;"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hovedseksjon -->
+    <main>
+        <!-- Tekst om tom handlekurv -->
+        <p class="text1">HANDLEKURVEN ER TOM</p>
+
+        <!-- Knapp for å gå til meny-siden -->
+        <button onclick="window.location.href='menu.html'" class="click">KLIKK HER FOR Å HANDLE</button>
+    </main>
+
+    <!-- Fotseksjon -->
+    <footer class="footer1">
+        <p>About Us</p>
+        <p>Contact Email: post@skyblue.com</p>
+    </footer>
+</body>
+
+</html>

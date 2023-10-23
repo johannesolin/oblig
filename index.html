@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metainformasjon -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inkludering av normalize.css for å tilbakestille standardstiler -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <!-- Inkludering av FontAwesome-ikoner for symboler og logoer -->
     <link href="assets/font/css/fontawesome.css" rel="stylesheet">
     <link href="assets/font/css/brands.css" rel="stylesheet">
     <link href="assets/font/css/solid.css" rel="stylesheet">
+    <!-- Inkludering av egendefinert stilark -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>SkyBlueShoes</title>
 </head>
 
 <body>
+    <!-- Grid-container for å organisere innholdet -->
     <div id="grid-container"></div>
-        <header>
-            <div class="nav_image">
-                <a href="index.html">
-                    <img alt="bildet" src="img/logo.png" width="150" height="40" />
-                </a>
-            </div>
-            <nav id="navigation">
-                <ul id="navigation-ul">
-                    <li><a href="menu.html" style="color: black;"><i class="a-sharp fa-solid fa-bars"></i></a></li>
-                    <li><a href="search.html" style="color: black;"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></li>
-                    <li class="end-right"><a href="costumer-club.html" style="color: black;"><i class="fa-solid fa-user"></i></a></li>
-                    <li><a href="shopping-cart.html" style="color: black;"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-              </nav>
-         </header>
-         
-         <main>
-            <section>
-                <img src="img/forste.png" alt="" class="first">
-            </section>
-
-            <section class="men_women">
-                <a href="products_men.html" class="men" style='color:#FFFFFF;'>MEN</a>
-                <a href="prodcuts_women.html" class="women" style='color: #FFFFFF;'>WOMEN</a>
-            </section>
-
-            <section>
-                <img src="img/andre.png" alt="" class="second">
-            </section>
-
-            <section>
-                <img src="img/tredje.png" alt="" class="third">
-            </section>
-        </main>
+    
+    <!-- Header-seksjon -->
+    <header>
+        <!-- Navigasjonsbilde og lenke til hjemmesiden -->
+        <div class="nav_image">
+            <a href="index.html">
+                <img alt="bildet" src="img/logo.png" width="150" height="40" />
+            </a>
+        </div>
         
-        <section class="delivery-ul">
-        <nav id="delivery">
-        <ul id="delivery-ul">
-            <li><i class="fa-sharp fa-solid fa-envelope"></i></li>
-            <li><i class="fa-sharp fa-solid fa-house"></i></li>
-            <li><i class="fa-sharp fa-solid fa-bag-shopping"></i></li>
-            <li><i class="fa-sharp fa-solid fa-clock"></i></li>
-        </ul>
+        <!-- Navigasjonsmeny -->
+        <nav id="navigation">
+            <ul id="navigation-ul">
+                <!-- Lenker med FontAwesome-ikoner for menyelementer -->
+                <li><a href="menu.html" style="color: black;"><i class="a-sharp fa-solid fa-bars"></i></a></li>
+                <li><a href="search.html" style="color: black;"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></li>
+                <li class="end-right"><a href="costumer-club.html" style="color: black;"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="shopping-cart.html" style="color: black;"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
         </nav>
+    </header>
+    
+    <!-- Hovedinnhold -->
+    <main>
+        <!-- Seksjon med bilde -->
+        <section>
+            <img src="img/forste.png" alt="" class="first">
         </section>
-        
-    <footer class="footer">
-        <p>About Us</p>
-        <p>Contact Email: post@skyblue.com</p>
 
-    </footer>    
+        <!-- Seksjon med lenker for MEN og WOMEN -->
+        <section class="men_women">
+            <a href="products_men.html" class="men" style='color:#FFFFFF;'>MEN</a>
+            <a href="prodcuts_women.html" class="women" style='color: #FFFFFF;'>WOMEN</a>
+        </section>
+
+        <!-- Ytterligere to seksjoner med bilder -->
+        <section>
+            <img src="img/andre.png" alt="" class="second">
+        </section>
+
+        <section>
+            <img src="img/tredje.png" alt="" class="third">
+        </section>
+    </main>
+    
+    <!-- Leveringsinformasjon -->
+    <section class="delivery-ul">
+        <nav id="delivery">
+            <ul id="delivery-ul">
+                <!-- Leveringsikonene med FontAwesome-ikoner -->
+                <li><i class="fa-sharp fa-solid fa-envelope"></i></li>
+                <li><i class="fa-sharp fa-solid fa-house"></i></li>
+                <li><i class="fa-sharp fa-solid fa-bag-shopping"></i></li>
+                <li><i class="fa-sharp fa-solid fa-clock"></i></li>
+            </ul>
+        </nav>
+    </section>
+    
+    <!-- Footer-seksjon -->
+    <footer class="footer">
+        <!-- Informasjon om selskapet -->
+        <p>About Us</p>
+        <!-- Kontaktinformasjon -->
+        <p>Contact Email: post@skyblue.com</p>
+    </footer>
 </body>
 </html>

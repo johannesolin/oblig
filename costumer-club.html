@@ -1,76 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Metainformasjon -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Eksterne stilark -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="assets/font/css/fontawesome.css" rel="stylesheet">
     <link href="assets/font/css/brands.css" rel="stylesheet">
     <link href="assets/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- Tittelen på nettsiden -->
     <title>SkyBlueShoes</title>
 </head>
 
 <body>
+    <!-- Grid Container -->
     <div id="grid-container"></div>
+
+    <!-- Header-seksjon -->
     <header>
+        <!-- Navigasjonsbilde med lenke til hovedsiden -->
         <div class="nav_image">
             <a href="index.html">
-                <img alt="bildet" src="img/logo.png" width="150" height="40" />
+                <img alt="SkyBlueShoes-logo" src="img/logo.png" width="150" height="40" />
             </a>
         </div>
-            <nav id="navigation">
-                <ul id="navigation-ul">
-                    <li><a href="menu.html" style="color: black;"><i class="a-sharp fa-solid fa-bars"></i></a></li>
-                    <li><a href="search.html" style="color: black;"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></li>
-                    <li class="end-right"><a href="costumer-club.html" style="color: black;"><i class="fa-solid fa-user"></i></a></li>
-                    <li><a href="shopping-cart.html" style="color: black;"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-              </nav>
-         </header>
-         <main>
-            <section>
-                <p class="Costumer-Club">KUNDEKLUBB</p>
-            </section>
 
-            <Section>
-                <button class="reg">Bli Medlem!</button>
-            </Section>
+        <!-- Navigasjonsmeny -->
+        <nav id="navigation">
+            <ul id="navigation-ul">
+                <!-- Lenke til meny-siden -->
+                <li><a href="menu.html" style="color: black;"><i class="a-sharp fa-solid fa-bars"></i></a></li>
 
-            <Section>
-                <button class="log">Logg inn!</button>
-            </Section>
+                <!-- Lenke til søkesiden -->
+                <li><a href="search.html" style="color: black;"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></li>
 
-            <section>
-                <article class="text2">
-                     <p>
-                        Bli en del av fellesskapet og nyt flere fordeler!
-                     </p>
-                    <p>
-                        Tjen bonuspoeng på hvert eneste kjøp hos oss.
-                    </p>
-                    <p> 
-                        Hold deg oppdatert med de nyeste nyhetene, inspirasjonen og spesialtilbudene.
-                    </p>
-                    <p>
-                        Nyt eksklusive tilbud skreddersydd kun for våre medlemmer.
-                    </p>
-                    <p> 
-                        Få en spesiell bursdagsgave som en ekstra påskjønnelse.
-                    </p>
-                    <p>
-                        Behold oversikten med digitale kvitteringer og kjøpshistorikk for enkel tilgang.
-                        Bli medlem i dag og opplev alt dette og mer!
-                     </p>
+                <!-- Lenke til kundeklubbsiden (høyrejustert) -->
+                <li class="end-right"><a href="costumer-club.html" style="color: black;"><i class="fa-solid fa-user"></i></a></li>
 
-                </article>
-            </section>
-         </main>
+                <!-- Lenke til handlekurvsiden -->
+                <li><a href="shopping-cart.html" style="color: black;"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
 
-         <footer class="footer1">
-            <p>About Us</p>
-            <p>Contact Email: post@skyblue.com</p>
-    
-        </footer>    
-    </body>
-    </html>
+    <!-- Hovedseksjon -->
+    <main>
+        <!-- Seksjon for kundeklubbinformasjon -->
+        <section>
+            <p class="Costumer-Club">KUNDEKLUBB</p>
+        </section>
+
+        <!-- Seksjon for påmeldingsknapp -->
+        <section>
+            <button class="reg">Bli Medlem!</button>
+        </section>
+
+        <!-- Seksjon for innloggingsknapp -->
+        <section>
+            <button class="log">Logg inn!</button>
+        </section>
+
+        <!-- Seksjon for tekstinformasjon om kundeklubben -->
+        <section>
+            <article class="text2">
+                <p>
+                    Bli en del av fellesskapet og nyt flere fordeler!
+                </p>
+                <p>
+                    Tjen bonuspoeng på hvert eneste kjøp hos oss.
+                </p>
+                <p>
+                    Hold deg oppdatert med de nyeste nyhetene, inspirasjonen og spesialtilbudene.
+                </p>
+                <p>
+                    Nyt eksklusive tilbud skreddersydd kun for våre medlemmer.
+                </p>
+                <p>
+                    Få en spesiell bursdagsgave som en ekstra påskjønnelse.
+                </p>
+                <p>
+                    Behold oversikten med digitale kvitteringer og kjøpshistorikk for enkel tilgang.
+                    Bli medlem i dag og opplev alt dette og mer!
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Fotseksjon -->
+    <footer class="footer1">
+        <p>About Us</p>
+        <p>Contact Email: post@skyblue.com</p>
+    </footer>
+</body>
+
+</html>
