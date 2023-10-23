@@ -2,7 +2,7 @@
 
 Nettsidenavn: SkyBlueShoes
 
-På denne nettsiden har jeg fokusert på å lsge en semantisk riktig nettside som skal være responsiv for alle enheter og i alle slags pixler. 
+På denne nettsiden har jeg fokusert på å lage en semantisk riktig nettside som skal være responsiv for alle enheter og i alle slags pixler. 
 
 Alle symbolene i headeren fungerer som på en vellfungereende nettside for salg av sko.
 
