@@ -19,63 +19,63 @@
 
 <body>
     <!-- Grid Container -->
-    <div id="grid-container"></div>
+    <div id="grid-container">
+        <!-- Header-seksjon -->
+        <header>
+            <!-- Navigasjonsbilde med lenke til hovedsiden -->
+            <div class="nav_image">
+                <a href="index.html">
+                    <img alt="SkyBlueShoes-logo" src="img/logo.png" width="150" height="40" />
+                </a>
+            </div>
 
-    <!-- Header-seksjon -->
-    <header>
-        <!-- Navigasjonsbilde med lenke til hovedsiden -->
-        <div class="nav_image">
-            <a href="index.html">
-                <img alt="SkyBlueShoes-logo" src="img/logo.png" width="150" height="40" />
-            </a>
-        </div>
+            <!-- Navigasjonsmeny -->
+            <nav id="navigation">
+                <ul id="navigation-ul">
+                    <!-- Lenke til meny-siden -->
+                    <li><a href="menu.html" style="color: black;"><i class="a-sharp fa-solid fa-bars"></i></a></li>
 
-        <!-- Navigasjonsmeny -->
-        <nav id="navigation">
-            <ul id="navigation-ul">
-                <!-- Lenke til meny-siden -->
-                <li><a href="menu.html" style="color: black;"><i class="a-sharp fa-solid fa-bars"></i></a></li>
+                    <!-- Lenke til søkesiden -->
+                    <li><a href="search.html" style="color: black;"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></li>
 
-                <!-- Lenke til søkesiden -->
-                <li><a href="search.html" style="color: black;"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></li>
+                    <!-- Lenke til kundeklubbsiden (høyrejustert) -->
+                    <li class="end-right"><a href="costumer-club.html" style="color: black;"><i class="fa-solid fa-user"></i></a></li>
 
-                <!-- Lenke til kundeklubbsiden (høyrejustert) -->
-                <li class="end-right"><a href="costumer-club.html" style="color: black;"><i class="fa-solid fa-user"></i></a></li>
+                    <!-- Lenke til handlekurvsiden -->
+                    <li><a href="shopping-cart.html" style="color: black;"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </header>
 
-                <!-- Lenke til handlekurvsiden -->
-                <li><a href="shopping-cart.html" style="color: black;"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
-        </nav>
-    </header>
+        <!-- Hovedseksjon -->
+        <main>
+            <!-- Seksjon for søkefelt -->
+            <section class="searchbar">
+                <form>
+                    <!-- Inndatafelt for søk -->
+                    <input placeholder="Search" style="color: black;">
 
-    <!-- Hovedseksjon -->
-    <main>
-        <!-- Seksjon for søkefelt -->
-        <section class="searchbar">
-            <form>
-                <!-- Inndatafelt for søk -->
-                <input placeholder="Search" style="color: black;">
+                    <!-- Knapp for å starte søket -->
+                    <button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </section>
 
-                <!-- Knapp for å starte søket -->
-                <button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
-            </form>
-        </section>
+            <!-- Kategorier og bilde av kundeelement -->
+            <section>
+                <!-- Kategorier for produkter -->
+                <p class="Men">MEN</p>
+                <p class="Women">WOMEN</p>
+                <p class="Junior">JUNIOR</p>
+                <p class="Sale">SALE</p>
+                <p class="Outlet">OUTLET</p>
+            </section>
 
-        <!-- Kategorier og bilde av kundeelement -->
-        <section>
-            <!-- Kategorier for produkter -->
-            <p class="Men">MEN</p>
-            <p class="Women">WOMEN</p>
-            <p class="Junior">JUNIOR</p>
-            <p class="Sale">SALE</p>
-            <p class="Outlet">OUTLET</p>
-        </section>
-
-        <!-- Bilde av kundeelement -->
-        <section>
-            <img src="img/tredje.png" alt="Customer Image" class="costumer">
-        </section>
-    </main>
+            <!-- Bilde av kundeelement -->
+            <section>
+                <img src="img/tredje.png" alt="Customer Image" class="costumer">
+            </section>
+        </main>
+    </div>
 
     <!-- Fotseksjon -->
     <footer class="footer1">

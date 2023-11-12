@@ -1,57 +1,76 @@
 /* Tilbakestiller tekstdekorasjon for alle elementer */
 * {
-    text-decoration: none;
+    text-decoration: none; /* Fjerner understrek for alle elementer */
 }
 
 /* Stilsetting for hele body */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
-    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; /* Setter skrifttypen for hele dokumentet */
+    overflow-x: hidden; /* Skjuler horisontal rullestang når innholdet er bredere enn vinduet */
+    margin: 0; /* Fjerner margin fra kroppen */
     background-color: #D3D3D3; /* Bakgrunnsfarge for hele siden */
 }
 
-/*media quiers for å tilpasse skjermstørrelse for mobil*/
-@media only screen and (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-}
-
-/*media quiers for å tilpasse skjermstørrelse for desktop*/
 @media only screen and (max-width: 1200px) {
     body {
-        font-size: 16px;
+        font-size: 16px; /* Justerer skriftstørrelsen ved mindre skjermbredder */
+    }
+
+    .first,
+    .second,
+    .third {
+        max-width: 100%; /* Sikrer at visse elementer tilpasser seg skjermens bredde */
+        height: auto; /* Justerer høyden automatisk for å opprettholde proporsjoner */
+    }
+
+    main {
+        max-width: 100%; /* Sikrer at hovedseksjonen tilpasser seg skjermens bredde */
+        padding: 5%; /* Justerer padding for hovedseksjonen */
     }
 }
 
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 16px; /* Justerer skriftstørrelsen ved større skjermbredder */
+    }
+
+    .first,
+    .second,
+    .third {
+        max-width: 100%; /* Sikrer at visse elementer tilpasser seg skjermens bredde */
+        height: auto; /* Justerer høyden automatisk for å opprettholde proporsjoner */
+    }
+}
+
+/* Stilsetting for layout */
 .layout {
-    box-sizing: border-box;
-    display: grid;
+    box-sizing: border-box; /* Inkluderer padding og kant i elementets totale bredde og høyde */
+    display: grid; /* Bruker CSS grid for layout */
     grid-template-areas:
-      "header"
-      "main"
-      "footer";
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-  }
+        "header"
+        "main"
+        "footer"; /* Definerer områder for header, main, og footer i grid */
+    grid-template-rows: auto 1fr auto; /* Angir høyden på grid-områdene */
+    min-height: 400%; /* Angir minimumshøyde for layout */
+}
 
 /* Stilsetting for hovedinnholdet */
 main {
-    overflow-x: hidden;
+    overflow-x: hidden; /* Skjuler horisontal rullestang når innholdet er bredere enn vinduet */
+    justify-content: center; /* Sentrerer innholdet horisontalt */
 }
 
 /* Tilbakestiller margin og padding for alle elementer */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Fjerner margin fra alle elementer */
+    padding: 0; /* Fjerner padding fra alle elementer */
 }
 
 /* Stilsetting for navigasjonen */
 nav {
-    width: 100%;
-    position: relative;
-    z-index: 1;
+    width: 100%; /* Setter bredden til 100% av foreldrelementet */
+    position: relative; /* Posisjonerer relativt til den normale posisjonen */
+    z-index: 1; /* Angir stabelrekkefølgen av elementet */
 }
 
 /* Stilsetting for header */
@@ -178,28 +197,36 @@ ul li {
     width: 50%;
 }
 
-/* Stilsetting for bilder i forskjellige seksjoner */
 .first {
-    background-size: cover;
-    width: 100%;
-    align-self: flex-start;
-    max-width: 100%;
-    min-height: 280px;
+    display: flex;
+    align-self: center;
+    margin: 1.5rem 0;
+    text-align: center;
+    text-decoration: none;
 }
+
 .second {
-    background-size: cover;
-    width: 100%;
-    align-self: flex-start;
-    max-width: 100%;
-    min-height: 280px;
+    display: flex;
+    align-self: center;
+    margin: 1.5rem 0;
+    text-align: center;
+    text-decoration: none;
 }
 
 .third {
-    background-size: cover;
+    display: flex;
+    align-self: center;
+    margin: 1.5rem 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.first img,
+.second img,
+.third img {
     width: 100%;
-    align-self: flex-start;
+    height: auto;
     max-width: 100%;
-    min-height: 280px;
 }
 
 /* Ekstra stilsetting for hovedinnholdet */
@@ -297,14 +324,6 @@ main {
     line-height: 2.2rem;
 }
 
-/* Stilsetting for leveringsul */
-.delivery-ul {
-    display: flex;
-    border: 5px black solid;
-    margin-left: 29%;
-    margin-right: 27%;
-}
-
 .delivery-ul li {
     border: 3px black solid;
     width: 1rem;
@@ -330,33 +349,40 @@ main {
     margin-left: 32%;
     margin-right: 32%;
     margin-top: 1.5rem;
-    }
-    
-    /* Stilsetting for footer */
-.footer {
-    background:grey;
+}
+
+/* Stilsetting for leveringsul */
+.delivery-ul {
+    display: flex;
+    border: 5px black solid;
+    margin-left: 29%;
+    margin-right: 27%;
     position: relative;
-    bottom: 0; 
-    width:100%;
-    padding:4%; 
-    bottom: 0;
-    margin-top: 100px;
-    }
+    margin-top: auto;
+}
 
 .footer p {
-    text-align:left;
-    }
+    text-align: left;
+}
 
+/* Stilsetting for footer1 */
 .footer1 {
-    background:grey;
-    position: absolute;        
-    bottom: 0; 
+    background: grey;
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    padding:2%; 
+    padding: 2%;
     bottom: 0;
     margin-top: 100px;
-    }
+}
 
-    footer {
-        grid-area: footer;
-    }
+.footer {
+    grid-area: footer;
+    background:  darkgrey;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 2%;
+    bottom: 0;
+    margin-top: 100px;
+}
