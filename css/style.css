@@ -123,6 +123,10 @@ ul li {
     display: grid;
     grid-template-areas: "header" "main" "footer";
 }
+#grid-container2 {
+    display:
+    grid-template-areas: "delivery";
+}
 
 /* Stilsetting for søkefelt */
 .searchbar {
